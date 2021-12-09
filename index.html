@@ -79,15 +79,70 @@
                     <div class="col-lg-4">
                         <p>Quisque at justo placerat, ornare turpis id, semper augue. Proin at vestibulum mauris. Nam
                             vitae arcu non risus fringilla ullamcorper .</p>
-                            <img src="img/site02.jpg" width="100%">
+                        <img src="img/site02.jpg" width="100%">
                     </div>
                 </div>
             </div>
     </section>
 
-    <section id="contato">
+    <!-- <section id="contato">
         <div class="container-fluid text-center margin">
             <h3 class="margin">CONTATO</h3>
+        </div>
+    </section> -->
+
+    <section id="contato">
+        <div class="container margin">
+            <div class="columns is-centered">
+				<div class="column is-half">
+					<h1 class="title has-text-centered">Contato</h3>
+
+                    <form action="enviar.php" method="POST">
+                        <div class="field">
+                            <label class="label">Nome</label>
+                            <div class="control">
+                                <input name="nome" class="input" type="text" placeholder="Seu nome">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Email *</label>
+                            <div class="control">
+                                <input name="email" class="input" type="email" placeholder="Seu email">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Assunto</label>
+                            <div class="control">
+                                <div class="select is-fullwidth">
+                                    <select name="assunto">
+                                        <option>Reportar erro</option>
+                                        <option>Anúncios</option>
+                                        <option>Elogio</option>
+                                        <option>Outro</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Mensagem *</label>
+                            <div class="control">
+                                <textarea name="mensagem" class="textarea" placeholder="Deixe sua mensagem"
+                                    maxlength="2000"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link is-medium">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
         </div>
     </section>
 
